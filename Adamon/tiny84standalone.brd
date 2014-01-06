@@ -105,10 +105,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="100" y2="0" width="0" layer="20"/>
-<wire x1="100" y1="0" x2="100" y2="80" width="0" layer="20"/>
-<wire x1="100" y1="80" x2="0" y2="80" width="0" layer="20"/>
-<wire x1="0" y1="80" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="54.61" x2="75.87" y2="54.61" width="0" layer="20"/>
+<wire x1="75.87" y1="54.61" x2="75.87" y2="86.35" width="0" layer="20"/>
+<wire x1="75.87" y1="86.35" x2="0" y2="86.35" width="0" layer="20"/>
+<wire x1="0" y1="86.35" x2="0" y2="54.61" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="led">
@@ -2731,45 +2731,42 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="PWRLED" library="led" package="CHIPLED_0805" value="RED" x="-22.86" y="15.24"/>
-<element name="TESTLED" library="led" package="CHIPLED_0805" value="GREEN" x="-16.51" y="15.24"/>
-<element name="R6" library="resistor" package="R0805" value="220" x="-55.88" y="45.72"/>
-<element name="R7" library="resistor" package="R0805" value="220" x="-16.51" y="52.07"/>
-<element name="R1" library="resistor" package="R0805" value="10k" x="-21.59" y="52.07"/>
-<element name="S1" library="SparkFun-Electromechanical" package="TACTILE_SWITCH_SMD" value="RESET" x="-27.94" y="52.07">
-<attribute name="PROD_ID" value="SWCH-08247" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="PWRLED" library="led" package="CHIPLED_0805" value="RED" x="60.96" y="66.04" rot="R90"/>
+<element name="R6" library="resistor" package="R0805" value="330" x="3.81" y="67.31" rot="R90"/>
+<element name="R1" library="resistor" package="R0805" value="10k" x="31.75" y="77.47"/>
+<element name="S1" library="SparkFun-Electromechanical" package="TACTILE_SWITCH_SMD" value="RESET" x="58.42" y="59.69">
+<attribute name="PROD_ID" value="SWCH-08247" x="86.36" y="7.62" size="1.778" layer="27" display="off"/>
 </element>
-<element name="BATTERY" library="SparkFun-Connectors" package="JST-2-PTH-VERT" value="M02JST-PTH-VERT" x="-31.75" y="39.37"/>
-<element name="R12" library="rcl" package="R0805" value="10k" x="-22.86" y="33.02"/>
-<element name="LED4" library="SparkFun-LED" package="LED5MM" value="Blue" x="-46.99" y="26.67"/>
-<element name="R15" library="rcl" package="R0805" value="330" x="-41.91" y="33.02"/>
-<element name="LED3" library="SparkFun-LED" package="LED5MM" value="Yellow" x="-45.72" y="17.78"/>
-<element name="R14" library="rcl" package="R0805" value="330" x="-35.56" y="33.02"/>
-<element name="LED2" library="SparkFun-LED" package="LED5MM" value="Red" x="-34.29" y="26.67"/>
-<element name="R13" library="rcl" package="R0805" value="330" x="-29.21" y="33.02"/>
-<element name="LED1" library="SparkFun-LED" package="LED5MM" value="Green" x="-21.59" y="26.67"/>
-<element name="R8" library="rcl" package="R0805" value="330" x="-46.99" y="33.02"/>
-<element name="R11" library="rcl" package="R0805" value="10k" x="-16.51" y="33.02"/>
-<element name="R10" library="rcl" package="R0805" value="10k" x="-54.61" y="26.67"/>
-<element name="R9" library="rcl" package="R0805" value="10k" x="-21.59" y="39.37"/>
-<element name="ATTINY84" library="SparkFun-DigitalIC" package="DIL14" value="ATTINY84ATTINY84-20PU" x="60.96" y="66.04" rot="R90"/>
-<element name="BUZZER" library="SparkFun-Electromechanical" package="BUZZER-CCV" value="BUZZERSMD2" x="-29.21" y="6.35"/>
-<element name="R16" library="resistor" package="R0805" value="150" x="-50.8" y="45.72"/>
-<element name="GAMEMD" library="SparkFun-Electromechanical" package="DIPSWITCH-02" value="GAMEMD" x="-19.05" y="6.35"/>
-<element name="R2" library="rcl" package="R0805" value="10k" x="-52.07" y="33.02"/>
-<element name="R3" library="rcl" package="R0805" value="10k" x="-16.51" y="39.37"/>
+<element name="BATTERY" library="SparkFun-Connectors" package="JST-2-PTH-VERT" value="M02JST-PTH-VERT" x="49.53" y="77.47" rot="R180"/>
+<element name="R12" library="rcl" package="R0805" value="10k" x="40.64" y="67.31" rot="R90"/>
+<element name="LED4" library="SparkFun-LED" package="LED5MM" value="Blue" x="36.83" y="73.66"/>
+<element name="R15" library="rcl" package="R0805" value="330" x="29.21" y="67.31" rot="R90"/>
+<element name="LED3" library="SparkFun-LED" package="LED5MM" value="Yellow" x="26.67" y="73.66"/>
+<element name="R14" library="rcl" package="R0805" value="330" x="34.29" y="67.31" rot="R90"/>
+<element name="LED2" library="SparkFun-LED" package="LED5MM" value="Red" x="16.51" y="73.66"/>
+<element name="R13" library="rcl" package="R0805" value="330" x="66.04" y="76.2" rot="R180"/>
+<element name="LED1" library="SparkFun-LED" package="LED5MM" value="Green" x="6.35" y="73.66"/>
+<element name="R8" library="rcl" package="R0805" value="330" x="24.13" y="67.31" rot="R90"/>
+<element name="R11" library="rcl" package="R0805" value="10k" x="54.61" y="66.04"/>
+<element name="R10" library="rcl" package="R0805" value="10k" x="19.05" y="67.31" rot="R90"/>
+<element name="R9" library="rcl" package="R0805" value="10k" x="21.59" y="77.47"/>
+<element name="ATTINY84" library="SparkFun-DigitalIC" package="DIL14" value="ATTINY84ATTINY84-20PU" x="68.58" y="66.04" rot="R90"/>
+<element name="BUZZER" library="SparkFun-Electromechanical" package="BUZZER-CCV" value="BUZZERSMD2" x="57.15" y="72.39" rot="R180"/>
+<element name="R16" library="resistor" package="R0805" value="150" x="8.89" y="67.31" rot="R90"/>
+<element name="GAMEMD" library="SparkFun-Electromechanical" package="DIPSWITCH-02" value="GAMEMD" x="48.26" y="59.69" rot="R90"/>
+<element name="R2" library="rcl" package="R0805" value="10k" x="13.97" y="67.31" rot="R90"/>
+<element name="R3" library="rcl" package="R0805" value="10k" x="11.43" y="77.47"/>
 <element name="BUTTON1" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="B1" x="6.35" y="59.69"/>
-<element name="BUTTON2" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="B2" x="-71.12" y="3.81"/>
-<element name="BUTTON3" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="B3" x="-80.01" y="3.81"/>
-<element name="BUTTON4" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="B4" x="-88.9" y="3.81"/>
-<element name="C1" library="resistor" package="C0805" value="220nF" x="-90.17" y="-3.81"/>
-<element name="C2" library="SparkFun-Capacitors" package="CPOL-RADIAL-100UF-25V" value="100uF" x="-97.79" y="-1.27"/>
+<element name="BUTTON2" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="B2" x="16.51" y="59.69"/>
+<element name="BUTTON3" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="B3" x="26.67" y="59.69"/>
+<element name="BUTTON4" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="B4" x="36.83" y="59.69"/>
+<element name="C1" library="resistor" package="C0805" value="220nF" x="41.91" y="77.47"/>
+<element name="C2" library="SparkFun-Capacitors" package="CPOL-RADIAL-100UF-25V" value="100uF" x="48.26" y="67.31"/>
 </elements>
 <signals>
 <signal name="GND">
 <contactref element="ATTINY84" pad="14"/>
 <contactref element="S1" pad="2"/>
-<contactref element="R7" pad="2"/>
 <contactref element="PWRLED" pad="A"/>
 <contactref element="LED1" pad="A"/>
 <contactref element="LED2" pad="A"/>
@@ -2784,22 +2781,21 @@ design rules under a new name.</description>
 <contactref element="BUTTON4" pad="2"/>
 <contactref element="BATTERY" pad="1"/>
 <contactref element="C2" pad="1"/>
-<wire x1="-85.6488" y1="6.0706" x2="-96.52" y2="-1.27" width="0" layer="19" extent="1-1"/>
-<wire x1="-76.7588" y1="6.0706" x2="-85.6488" y2="6.0706" width="0" layer="19" extent="1-1"/>
-<wire x1="-67.8688" y1="6.0706" x2="-76.7588" y2="6.0706" width="0" layer="19" extent="1-1"/>
-<wire x1="9.6012" y1="61.9506" x2="-67.8688" y2="6.0706" width="0" layer="19" extent="1-1"/>
-<wire x1="-46.99" y1="17.78" x2="9.6012" y2="61.9506" width="0" layer="19" extent="1-1"/>
-<wire x1="57.15" y1="57.15" x2="-46.99" y2="17.78" width="0" layer="19" extent="1-1"/>
-<wire x1="-35.56" y1="26.67" x2="57.15" y2="57.15" width="0" layer="19" extent="1-1"/>
-<wire x1="-48.26" y1="26.67" x2="-46.99" y2="17.78" width="0" layer="19" extent="1-1"/>
-<wire x1="-32.75" y1="38.82" x2="-35.56" y2="26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-22.86" y1="26.67" x2="-35.56" y2="26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-22.86" y1="14.19" x2="-22.86" y2="26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-20.32" y1="10.16" x2="-22.86" y2="14.19" width="0" layer="19" extent="1-1"/>
-<wire x1="-17.78" y1="10.16" x2="-20.32" y2="10.16" width="0" layer="19" extent="1-1"/>
-<wire x1="-33.21" y1="6.35" x2="-22.86" y2="14.19" width="0" layer="19" extent="1-1"/>
-<wire x1="-25.4" y1="53.975" x2="-32.75" y2="38.82" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.66" y1="52.07" x2="-25.4" y2="53.975" width="0" layer="19" extent="1-1"/>
+<wire x1="62.01" y1="66.04" x2="61.15" y2="72.39" width="0" layer="19" extent="1-1"/>
+<wire x1="60.96" y1="61.595" x2="62.01" y2="66.04" width="0" layer="19" extent="1-1"/>
+<wire x1="64.77" y1="57.15" x2="60.96" y2="61.595" width="0" layer="19" extent="1-1"/>
+<wire x1="49.53" y1="67.31" x2="62.01" y2="66.04" width="0" layer="19" extent="1-1"/>
+<wire x1="50.53" y1="78.02" x2="49.53" y2="67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="44.45" y1="60.96" x2="49.53" y2="67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="44.45" y1="58.42" x2="44.45" y2="60.96" width="0" layer="19" extent="1-1"/>
+<wire x1="40.0812" y1="61.9506" x2="44.45" y2="60.96" width="0" layer="19" extent="1-1"/>
+<wire x1="29.9212" y1="61.9506" x2="40.0812" y2="61.9506" width="0" layer="19" extent="1-1"/>
+<wire x1="19.7612" y1="61.9506" x2="29.9212" y2="61.9506" width="0" layer="19" extent="1-1"/>
+<wire x1="9.6012" y1="61.9506" x2="19.7612" y2="61.9506" width="0" layer="19" extent="1-1"/>
+<wire x1="35.56" y1="73.66" x2="50.53" y2="78.02" width="0" layer="19" extent="1-1"/>
+<wire x1="25.4" y1="73.66" x2="35.56" y2="73.66" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="73.66" x2="25.4" y2="73.66" width="0" layer="19" extent="1-1"/>
+<wire x1="5.08" y1="73.66" x2="15.24" y2="73.66" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="R1" pad="2"/>
@@ -2807,138 +2803,128 @@ design rules under a new name.</description>
 <contactref element="ATTINY84" pad="1"/>
 <contactref element="BATTERY" pad="2"/>
 <contactref element="C2" pad="2"/>
-<wire x1="64.77" y1="57.15" x2="-99.06" y2="-1.27" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.75" y1="38.82" x2="64.77" y2="57.15" width="0" layer="19" extent="1-1"/>
-<wire x1="-20.74" y1="52.07" x2="-30.75" y2="38.82" width="0" layer="19" extent="1-1"/>
-<wire x1="-55.03" y1="45.72" x2="-30.75" y2="38.82" width="0" layer="19" extent="1-1"/>
+<wire x1="72.39" y1="57.15" x2="46.99" y2="67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="48.53" y1="78.02" x2="72.39" y2="57.15" width="0" layer="19" extent="1-1"/>
+<wire x1="32.6" y1="77.47" x2="48.53" y2="78.02" width="0" layer="19" extent="1-1"/>
+<wire x1="3.81" y1="68.16" x2="48.53" y2="78.02" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="PWRLED" pad="C"/>
 <contactref element="R6" pad="1"/>
-<wire x1="-22.86" y1="16.29" x2="-56.73" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="59.91" y1="66.04" x2="3.81" y2="66.46" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="S1" pad="4"/>
 <contactref element="R1" pad="1"/>
 <contactref element="ATTINY84" pad="4"/>
-<wire x1="-25.4" y1="50.165" x2="-22.44" y2="52.07" width="0" layer="19" extent="1-1"/>
-<wire x1="64.77" y1="64.77" x2="-25.4" y2="50.165" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$7">
-<contactref element="TESTLED" pad="C"/>
-<contactref element="ATTINY84" pad="13"/>
-<wire x1="-16.51" y1="16.29" x2="57.15" y2="59.69" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$8">
-<contactref element="TESTLED" pad="A"/>
-<contactref element="R7" pad="1"/>
-<wire x1="-16.51" y1="14.19" x2="-17.36" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="60.96" y1="57.785" x2="30.9" y2="77.47" width="0" layer="19" extent="1-1"/>
+<wire x1="72.39" y1="64.77" x2="60.96" y2="57.785" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$32">
 <contactref element="LED4" pad="K"/>
 <contactref element="R15" pad="2"/>
-<wire x1="-40.96" y1="33.02" x2="-45.72" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="29.21" y1="68.26" x2="38.1" y2="73.66" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$33">
 <contactref element="LED3" pad="K"/>
 <contactref element="R14" pad="2"/>
-<wire x1="-34.61" y1="33.02" x2="-44.45" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="34.29" y1="68.26" x2="27.94" y2="73.66" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$35">
 <contactref element="R13" pad="2"/>
 <contactref element="LED2" pad="K"/>
-<wire x1="-28.26" y1="33.02" x2="-33.02" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="65.09" y1="76.2" x2="17.78" y2="73.66" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$37">
 <contactref element="LED1" pad="K"/>
 <contactref element="R8" pad="2"/>
-<wire x1="-20.32" y1="26.67" x2="-46.04" y2="33.02" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="73.66" x2="24.13" y2="68.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$17">
 <contactref element="R9" pad="1"/>
 <contactref element="R10" pad="2"/>
 <contactref element="BUTTON2" pad="4"/>
-<wire x1="-53.66" y1="26.67" x2="-67.8688" y2="1.5494" width="0" layer="19" extent="1-1"/>
-<wire x1="-22.54" y1="39.37" x2="-53.66" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="19.05" y1="68.26" x2="19.7612" y2="57.4294" width="0" layer="19" extent="1-1"/>
+<wire x1="20.64" y1="77.47" x2="19.05" y2="68.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$18">
 <contactref element="R11" pad="2"/>
 <contactref element="R10" pad="1"/>
 <contactref element="BUTTON3" pad="4"/>
-<wire x1="-55.56" y1="26.67" x2="-76.7588" y2="1.5494" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.56" y1="33.02" x2="-55.56" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="19.05" y1="66.36" x2="29.9212" y2="57.4294" width="0" layer="19" extent="1-1"/>
+<wire x1="55.56" y1="66.04" x2="19.05" y2="66.36" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$20">
 <contactref element="R12" pad="2"/>
 <contactref element="R11" pad="1"/>
 <contactref element="BUTTON4" pad="4"/>
-<wire x1="-21.91" y1="33.02" x2="-85.6488" y2="1.5494" width="0" layer="19" extent="1-1"/>
-<wire x1="-17.46" y1="33.02" x2="-21.91" y2="33.02" width="0" layer="19" extent="1-1"/>
+<wire x1="40.64" y1="68.26" x2="40.0812" y2="57.4294" width="0" layer="19" extent="1-1"/>
+<wire x1="53.66" y1="66.04" x2="40.64" y2="68.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="BUZZER" pad="+"/>
 <contactref element="R16" pad="1"/>
-<wire x1="-51.65" y1="45.72" x2="-25.21" y2="6.35" width="0" layer="19" extent="1-1"/>
+<wire x1="8.89" y1="66.46" x2="53.15" y2="72.39" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="R16" pad="2"/>
 <contactref element="ATTINY84" pad="5"/>
-<wire x1="-49.95" y1="45.72" x2="64.77" y2="67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="8.89" y1="68.16" x2="72.39" y2="67.31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$10">
 <contactref element="R8" pad="1"/>
 <contactref element="ATTINY84" pad="3"/>
-<wire x1="-47.94" y1="33.02" x2="64.77" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="24.13" y1="66.36" x2="72.39" y2="62.23" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
 <contactref element="R13" pad="1"/>
 <contactref element="ATTINY84" pad="2"/>
-<wire x1="-30.16" y1="33.02" x2="64.77" y2="59.69" width="0" layer="19" extent="1-1"/>
+<wire x1="66.99" y1="76.2" x2="72.39" y2="59.69" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$12">
 <contactref element="R14" pad="1"/>
 <contactref element="ATTINY84" pad="6"/>
-<wire x1="-36.51" y1="33.02" x2="64.77" y2="69.85" width="0" layer="19" extent="1-1"/>
+<wire x1="34.29" y1="66.36" x2="72.39" y2="69.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$13">
 <contactref element="R15" pad="1"/>
 <contactref element="ATTINY84" pad="7"/>
-<wire x1="-42.86" y1="33.02" x2="64.77" y2="72.39" width="0" layer="19" extent="1-1"/>
+<wire x1="29.21" y1="66.36" x2="72.39" y2="72.39" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$15">
 <contactref element="R3" pad="1"/>
 <contactref element="GAMEMD" pad="1"/>
-<wire x1="-20.32" y1="2.54" x2="-17.46" y2="39.37" width="0" layer="19" extent="1-1"/>
+<wire x1="52.07" y1="58.42" x2="10.48" y2="77.47" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$16">
 <contactref element="R2" pad="1"/>
 <contactref element="GAMEMD" pad="2"/>
-<wire x1="-17.78" y1="2.54" x2="-53.02" y2="33.02" width="0" layer="19" extent="1-1"/>
+<wire x1="52.07" y1="60.96" x2="13.97" y2="66.36" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$19">
 <contactref element="R3" pad="2"/>
 <contactref element="ATTINY84" pad="8"/>
-<wire x1="57.15" y1="72.39" x2="-15.56" y2="39.37" width="0" layer="19" extent="1-1"/>
+<wire x1="64.77" y1="72.39" x2="12.38" y2="77.47" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$21">
 <contactref element="R2" pad="2"/>
 <contactref element="ATTINY84" pad="9"/>
-<wire x1="57.15" y1="69.85" x2="-51.12" y2="33.02" width="0" layer="19" extent="1-1"/>
+<wire x1="64.77" y1="69.85" x2="13.97" y2="68.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$14">
 <contactref element="R9" pad="2"/>
 <contactref element="BUTTON1" pad="4"/>
-<wire x1="-20.64" y1="39.37" x2="9.6012" y2="57.4294" width="0" layer="19" extent="1-1"/>
+<wire x1="22.54" y1="77.47" x2="9.6012" y2="57.4294" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="R12" pad="1"/>
 <contactref element="C1" pad="2"/>
-<wire x1="-23.81" y1="33.02" x2="-89.32" y2="-3.81" width="0" layer="19" extent="1-1"/>
+<wire x1="40.64" y1="66.36" x2="42.76" y2="77.47" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$22">
 <contactref element="C1" pad="1"/>
 <contactref element="ATTINY84" pad="12"/>
-<wire x1="57.15" y1="62.23" x2="-91.02" y2="-3.81" width="0" layer="19" extent="1-1"/>
+<wire x1="64.77" y1="62.23" x2="41.06" y2="77.47" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

@@ -12512,9 +12512,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 </classes>
 <parts>
 <part name="PWRLED" library="led" deviceset="LED" device="CHIPLED_0805" value="RED"/>
-<part name="TESTLED" library="led" deviceset="LED" device="CHIPLED_0805" value="GREEN"/>
-<part name="R6" library="resistor" deviceset="R-US_" device="R0805" value="220"/>
-<part name="R7" library="resistor" deviceset="R-US_" device="R0805" value="220"/>
+<part name="R6" library="resistor" deviceset="R-US_" device="R0805" value="330"/>
 <part name="R1" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
 <part name="S1" library="SparkFun-Electromechanical" deviceset="TAC_SWITCH" device="SMD" value="RESET"/>
 <part name="BATTERY" library="SparkFun-Connectors" deviceset="M02" device="JST-PTH-VERT"/>
@@ -12522,7 +12520,6 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="R12" library="rcl" deviceset="R-US_" device="R0805" value="10k"/>
@@ -12569,9 +12566,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 </plain>
 <instances>
 <instance part="PWRLED" gate="G$1" x="45.72" y="132.08" rot="R90"/>
-<instance part="TESTLED" gate="G$1" x="38.1" y="58.42" rot="R90"/>
 <instance part="R6" gate="G$1" x="58.42" y="132.08"/>
-<instance part="R7" gate="G$1" x="25.4" y="58.42" rot="R180"/>
 <instance part="R1" gate="G$1" x="33.02" y="106.68" rot="R180"/>
 <instance part="S1" gate="S" x="35.56" y="116.84"/>
 <instance part="BATTERY" gate="G$1" x="2.54" y="137.16" rot="MR180"/>
@@ -12579,7 +12574,6 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <instance part="P+3" gate="VCC" x="7.62" y="99.06" rot="R90"/>
 <instance part="SUPPLY4" gate="GND" x="10.16" y="68.58" rot="R270"/>
 <instance part="SUPPLY7" gate="GND" x="25.4" y="114.3" rot="R270"/>
-<instance part="SUPPLY8" gate="GND" x="15.24" y="58.42" rot="R270"/>
 <instance part="SUPPLY3" gate="GND" x="35.56" y="132.08" rot="R270"/>
 <instance part="P+1" gate="VCC" x="68.58" y="132.08" rot="R270"/>
 <instance part="R12" gate="G$1" x="66.04" y="50.8" rot="MR0"/>
@@ -12633,11 +12627,6 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
 <pinref part="S1" gate="S" pin="2"/>
 <wire x1="27.94" y1="114.3" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="SUPPLY8" gate="GND" pin="GND"/>
-<wire x1="20.32" y1="58.42" x2="17.78" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="PWRLED" gate="G$1" pin="A"/>
@@ -12755,21 +12744,6 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <wire x1="71.12" y1="99.06" x2="66.04" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="114.3" x2="45.72" y2="106.68" width="0.1524" layer="91"/>
 <junction x="45.72" y="106.68"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="TESTLED" gate="G$1" pin="C"/>
-<wire x1="43.18" y1="58.42" x2="66.04" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="58.42" x2="66.04" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="ATTINY84" gate="G$1" pin="(PCINT0/AREF/ADC0)PA0"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="TESTLED" gate="G$1" pin="A"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="58.42" x2="30.48" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="0">
