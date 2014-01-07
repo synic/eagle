@@ -12514,12 +12514,10 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="PWRLED" library="led" deviceset="LED" device="CHIPLED_0805" value="RED"/>
 <part name="R6" library="resistor" deviceset="R-US_" device="R0805" value="330"/>
 <part name="R1" library="resistor" deviceset="R-US_" device="R0805" value="10k"/>
-<part name="S1" library="SparkFun-Electromechanical" deviceset="TAC_SWITCH" device="SMD" value="RESET"/>
 <part name="BATTERY" library="SparkFun-Connectors" deviceset="M02" device="JST-PTH-VERT"/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="R12" library="rcl" deviceset="R-US_" device="R0805" value="10k"/>
@@ -12565,17 +12563,15 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <plain>
 </plain>
 <instances>
-<instance part="PWRLED" gate="G$1" x="45.72" y="132.08" rot="R90"/>
-<instance part="R6" gate="G$1" x="58.42" y="132.08"/>
+<instance part="PWRLED" gate="G$1" x="40.64" y="114.3" rot="R90"/>
+<instance part="R6" gate="G$1" x="53.34" y="114.3"/>
 <instance part="R1" gate="G$1" x="33.02" y="106.68" rot="R180"/>
-<instance part="S1" gate="S" x="35.56" y="116.84"/>
 <instance part="BATTERY" gate="G$1" x="2.54" y="137.16" rot="MR180"/>
 <instance part="P+2" gate="VCC" x="20.32" y="121.92"/>
 <instance part="P+3" gate="VCC" x="7.62" y="99.06" rot="R90"/>
 <instance part="SUPPLY4" gate="GND" x="10.16" y="68.58" rot="R270"/>
-<instance part="SUPPLY7" gate="GND" x="25.4" y="114.3" rot="R270"/>
-<instance part="SUPPLY3" gate="GND" x="35.56" y="132.08" rot="R270"/>
-<instance part="P+1" gate="VCC" x="68.58" y="132.08" rot="R270"/>
+<instance part="SUPPLY3" gate="GND" x="30.48" y="114.3" rot="R270"/>
+<instance part="P+1" gate="VCC" x="63.5" y="114.3" rot="R270"/>
 <instance part="R12" gate="G$1" x="66.04" y="50.8" rot="MR0"/>
 <instance part="LED4" gate="G$1" x="106.68" y="68.58" rot="R270"/>
 <instance part="R15" gate="G$1" x="93.98" y="68.58"/>
@@ -12624,13 +12620,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <pinref part="ATTINY84" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="SUPPLY7" gate="GND" pin="GND"/>
-<pinref part="S1" gate="S" pin="2"/>
-<wire x1="27.94" y1="114.3" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="PWRLED" gate="G$1" pin="A"/>
-<wire x1="38.1" y1="132.08" x2="43.18" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="114.3" x2="38.1" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -12706,7 +12697,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="63.5" y1="132.08" x2="66.04" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="114.3" x2="60.96" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
@@ -12729,21 +12720,16 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <segment>
 <pinref part="PWRLED" gate="G$1" pin="C"/>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="132.08" x2="53.34" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="114.3" x2="48.26" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="S1" gate="S" pin="4"/>
-<wire x1="40.64" y1="114.3" x2="45.72" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="106.68" x2="45.72" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="106.68" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="106.68" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="106.68" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="ATTINY84" gate="G$1" pin="(PCINT11/~RESET/DW)PB3"/>
 <wire x1="71.12" y1="99.06" x2="66.04" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="114.3" x2="45.72" y2="106.68" width="0.1524" layer="91"/>
-<junction x="45.72" y="106.68"/>
 </segment>
 </net>
 <net name="N$32" class="0">
