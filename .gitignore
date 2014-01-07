@@ -22,6 +22,11 @@ eagle.epf
 *.sts
 *.crc
 *.crs
+*.pro
+*.xln
+*.gpi
+*.ger
+*.zip
 
 *.dri
 *.drl
